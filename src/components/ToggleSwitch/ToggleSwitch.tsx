@@ -1,31 +1,21 @@
-import React, { useState } from 'react';
-import './toggleswitch.css';
+// ToggleSwitch.tsx
+import React from 'react';
+import './ToggleSwitch.css';
 
 interface ToggleSwitchProps {
-  checked?: boolean;
-  onChange?: (checked: boolean) => void;
+  checked: boolean;
+  onChange: (checked: boolean) => void;
 }
 
-const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ checked = false, onChange }) => {
-  const [isChecked, setIsChecked] = useState(checked);
-
+const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ checked, onChange }) => {
   const handleChange = () => {
-    const newCheckedState = !isChecked;
-    setIsChecked(newCheckedState);
-    if (onChange) {
-      onChange(newCheckedState);
-    }
+    onChange(!checked);
   };
 
   return (
-    <label className="toggle-switch">
-      <input
-        type="checkbox"
-        className="toggle-switch-checkbox"
-        checked={isChecked}
-        onChange={handleChange}
-      />
-      <span className="toggle-switch-slider"></span>
+    <label className='toggle-switch'>
+      <input type='checkbox' checked={checked} onChange={handleChange} />
+      <span className='slider'></span>
     </label>
   );
 };
