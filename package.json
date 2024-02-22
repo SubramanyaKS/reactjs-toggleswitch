@@ -1,12 +1,19 @@
 {
   "name": "reactjs-toggleswitch",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A simple toggleswitch using TypeScript and React",
   "main": "dist/cjs/index.js",
   "type": "module",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SubramanyaKS/reactjs-toggleswitch"
+  },
+  "bugs": {
+    "url": "https://github.com/SubramanyaKS/reactjs-toggleswitch/issues"
+  },
   "types": "dist/index.d.ts",
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs"
