@@ -43,3 +43,8 @@ The `ToggleSwitch` component accepts the following props:
 
 * `checked`: (boolean) Specifies whether the switch is checked or not.
 * `onChange`: (function) Callback function called when the switch state changes. Receives a boolean parameter indicating the new state.
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
