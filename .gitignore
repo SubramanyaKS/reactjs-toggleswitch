@@ -3,3 +3,4 @@ node_modules
 .rollup.cache
 .DS_Store
 .git
+dummy
