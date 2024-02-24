@@ -1,4 +1,6 @@
 src
 rollup.config.js
 .vscode
-reactjs-toggleswitch*.tgz
+# reactjs-toggleswitch*.tgz
+CHANGELOG.md
+dummy
