@@ -6,15 +6,13 @@
 
 you can install this package using below npm command
 
-``` 
+```shell
 npm install reactjs-toggleswitch
-
 ```
 or
 
-```
+```shell
 yarn add reactjs-toggleswitch
-
 ```
 
 ## Usage
