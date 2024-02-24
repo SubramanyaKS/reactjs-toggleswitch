@@ -15,7 +15,7 @@ All notable changes to the ToggleSwitch component will be documented in this fil
 - Fixed a bug causing the component not adopt  styles.
 - Added README.md with customization instructions.
 
-## [1.0.5] - 2024-02-23
+## [1.0.4] - 2024-02-23
 
 ### Added
 - Ability to customize switch colors using `onColor` and `offColor` props.
@@ -29,5 +29,5 @@ All notable changes to the ToggleSwitch component will be documented in this fil
 ## [1.0.17] - 2024-02-24
 
 ### Fixed
-- Fixed a bug where the style is can externally attach
+- Fixed a bug where the style can externally attach through import statement
 
