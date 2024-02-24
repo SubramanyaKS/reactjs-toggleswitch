@@ -1,6 +1,6 @@
 # React JS Toggle Switch
 
-`reactjs-switch` is  a basic toggle switch component implemented using react js and typscript.
+`reactjs-switch` is  a basic toggle switch component implemented using react js and TypeScript.
 
 ## Installation
 
@@ -65,6 +65,12 @@ const MyComponent: React.FC = () => {
   );
 };
 
+
+```
+**Note**: Except v1.0.8 all other version need to import below file in App.jsx/tsx or main.jsx/tsx for styles to work.
+
+```
+import 'reactjs-toggleswitch/dist/cjs/index.css';
 
 ```
 
