@@ -2,11 +2,11 @@ import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import typescript from '@rollup/plugin-typescript'
 import {dts} from 'rollup-plugin-dts'
-import css from "rollup-plugin-import-css";
-
+// import css from "rollup-plugin-import-css";
+import postcss from 'rollup-plugin-postcss';
+// import autoprefixer from 'autoprefixer';
 //NEW
-import terser from '@rollup/plugin-terser'
-// import peerDepsExternal from 'rollup-plugin-peer-deps-external'
+import terser from '@rollup/plugin-terser';
 
 const packageJson = require('./package.json')
 
@@ -14,6 +14,7 @@ export default [
   {
     input: 'src/index.ts',
     output: [
+      
       {
         file: packageJson.main,
         format: 'esm',
@@ -22,12 +23,24 @@ export default [
     ],
     plugins: [
       // NEW
-      typescript(),
-      css(),
+      typescript({
+        tsconfig: './tsconfig.json' // Path to your tsconfig.json
+      }),
+      // css(),
       // peerDepsExternal(),
 
       resolve(),
       commonjs(),
+      postcss({
+        plugins: [],
+        // sourceMap: true,
+        extract: true,
+        inject:false,
+        extensions:['.css'],
+        minimize: true,
+        
+    }),
+    // css(),
 
       // NEW
       terser(),
