@@ -69,7 +69,7 @@ const MyComponent: React.FC = () => {
 ```
 **Note**: Except v1.0.8 all other version need to import below file in App.jsx/tsx or main.jsx/tsx for styles to work.
 
-```
+```js
 import 'reactjs-toggleswitch/dist/cjs/index.css';
 
 ```
