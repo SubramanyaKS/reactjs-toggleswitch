@@ -31,3 +31,8 @@ All notable changes to the ToggleSwitch component will be documented in this fil
 ### Fixed
 - Fixed a bug where the style can externally attach through import statement
 
+## [1.1.0] - 2024-02-25
+
+### Added
+- Support for disabling the toggle switch using the `disable` prop.
+- Updated README.md with documentation for the `disable` prop.
