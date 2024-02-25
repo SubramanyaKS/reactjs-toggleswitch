@@ -80,7 +80,7 @@ The `ToggleSwitch` component accepts the following props:
 * `onChange`: (function) Callback function called when the switch state changes. Receives a boolean parameter indicating the new state.
 * `onColor` : (string)  specifies background color change when switch is checked
 * `offColor` : (string)  specifies background color change when switch is unchecked
-
+* `disable` : (boolean) specifies for disabling/enabling the toggle.
 
 | Option | type | Description |
 | :---: | :---: | :---: |
@@ -88,7 +88,7 @@ The `ToggleSwitch` component accepts the following props:
 | `checked` | `boolean` | Specifies whether the switch is checke    d or not. |
 | `onColor` | `string` | specifies background color change when switch is checked |
 | `offColor` | `string` | specifies background color change when switch is unchecked |
-
+| `disable` | `boolean` | specifies for disabling/enabling the toggle. |
 
 ## Author
 [Subramanya KS](https://github.com/SubramanyaKS)
