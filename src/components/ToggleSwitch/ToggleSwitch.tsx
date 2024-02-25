@@ -7,16 +7,17 @@ interface ToggleSwitchProps {
   onChange: (checked: boolean) => void;
   onColor?:string;
   offColor?:string;
+  disable?:boolean;
 }
 
-const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ checked, onChange,onColor="#2196f3",offColor="#cccccc" }) => {
+const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ checked, onChange,onColor="#2196f3",offColor="#cccccc",disable=false }) => {
   const handleChange = () => {
     onChange(!checked);
   };
 
   return (
     <label className='toggle-switch'>
-      <input type='checkbox' checked={checked} onChange={handleChange} />
+      <input type='checkbox' disabled={disable} checked={checked} onChange={handleChange} />
       <span style={{ backgroundColor: checked ? onColor : offColor }} className='slider'></span>
     </label>
   );
