@@ -3,7 +3,7 @@
 <!-- 
 ![NPM Version](https://img.shields.io/npm/v/reactjs-toggleswitch) -->
 
-`reactjs-switch` is  a simple toggle switch component implemented using react js and TypeScript.
+`reactjs-switch` is  a simple toggle switch component implemented using react js and TypeScript.It is a customizable toggle switch component for React applications. It provides a simple and intuitive way to implement toggle functionality with customizable styles and behavior.
 
 ## Installation
 
@@ -78,12 +78,12 @@ import 'reactjs-toggleswitch/dist/cjs/index.css';
 ### Options
 
 The `ToggleSwitch` component accepts the following props:
-
+<!-- 
 * `checked`: (boolean) Specifies whether the switch is checked or not.
 * `onToggle`: (function) Callback function called when the switch state changes. Receives a boolean parameter indicating the new state.
 * `onColor` : (string)  specifies background color change when switch is checked
 * `offColor` : (string)  specifies background color change when switch is unchecked
-* `disable` : (boolean) specifies for disabling/enabling the toggle.
+* `disable` : (boolean) specifies for disabling/enabling the toggle. -->
 
 | Option | type | Description |
 | :---: | :---: | :---: |
@@ -92,6 +92,7 @@ The `ToggleSwitch` component accepts the following props:
 | `onColor` | `string` | specifies background color change when switch is checked |
 | `offColor` | `string` | specifies background color change when switch is unchecked |
 | `disable` | `boolean` | specifies for disabling/enabling the toggle. |
+| `ariaLabel` | `string`| used to provide a label or description for an element. |
 
 ## Author
 [Subramanya KS](https://github.com/SubramanyaKS)
