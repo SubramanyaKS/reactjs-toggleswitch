@@ -1,6 +1,6 @@
 {
   "name": "reactjs-toggleswitch",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A simple toggleswitch using TypeScript and React",
   "main": "dist/cjs/index.js",
   "type": "module",
