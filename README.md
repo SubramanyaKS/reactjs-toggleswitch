@@ -1,6 +1,9 @@
 # React JS Toggle Switch
 
-`reactjs-switch` is  a basic toggle switch component implemented using react js and TypeScript.
+<!-- 
+![NPM Version](https://img.shields.io/npm/v/reactjs-toggleswitch) -->
+
+`reactjs-switch` is  a simple toggle switch component implemented using react js and TypeScript.
 
 ## Installation
 
@@ -34,7 +37,7 @@ const MyComponent: React.FC = () => {
   return (
     <div>
       <h2>Toggle Default Switch Example</h2>
-      <ToggleSwitch checked={isChecked} onChange={handleChange} />
+      <ToggleSwitch checked={isChecked} onToggle={handleChange} />
     </div>
   );
 };
@@ -58,7 +61,7 @@ const MyComponent: React.FC = () => {
   return (
     <div>
       <h2>Toggle Switch Example</h2>
-      <ToggleSwitch checked={isChecked} onColor={"#0f0"} offColor={"#0ff"} onChange={handleChange} />
+      <ToggleSwitch checked={isChecked} onColor={"#0f0"} offColor={"#0ff"} onToggle={handleChange} />
     </div>
   );
 };
@@ -77,14 +80,14 @@ import 'reactjs-toggleswitch/dist/cjs/index.css';
 The `ToggleSwitch` component accepts the following props:
 
 * `checked`: (boolean) Specifies whether the switch is checked or not.
-* `onChange`: (function) Callback function called when the switch state changes. Receives a boolean parameter indicating the new state.
+* `onToggle`: (function) Callback function called when the switch state changes. Receives a boolean parameter indicating the new state.
 * `onColor` : (string)  specifies background color change when switch is checked
 * `offColor` : (string)  specifies background color change when switch is unchecked
 * `disable` : (boolean) specifies for disabling/enabling the toggle.
 
 | Option | type | Description |
 | :---: | :---: | :---: |
-| `onChange` | `function` | Callback function called when the switch state changes. Receives a boolean parameter indicating the new state. |
+| `onToggle` | `function` | Callback function called when the switch state changes/toggle. Receives a boolean parameter indicating the new state. |
 | `checked` | `boolean` | Specifies whether the switch is checke    d or not. |
 | `onColor` | `string` | specifies background color change when switch is checked |
 | `offColor` | `string` | specifies background color change when switch is unchecked |
