@@ -36,3 +36,8 @@ All notable changes to the ToggleSwitch component will be documented in this fil
 ### Added
 - Support for disabling the toggle switch using the `disable` prop.
 - Updated README.md with documentation for the `disable` prop.
+
+## [1.1.1] - 2024-02-27
+
+### Fixed
+- Updated from `onChange` to `onToggle`
