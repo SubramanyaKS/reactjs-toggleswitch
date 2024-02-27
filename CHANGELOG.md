@@ -41,3 +41,9 @@ All notable changes to the ToggleSwitch component will be documented in this fil
 
 ### Fixed
 - Updated from `onChange` to `onToggle`
+
+## [1.1.2] - 2024-02-27
+
+### Added
+- Support for disabling the toggle switch using the `ariaLabel` prop.
+- Updated README.md with documentation for the `ariaLabel` prop.
