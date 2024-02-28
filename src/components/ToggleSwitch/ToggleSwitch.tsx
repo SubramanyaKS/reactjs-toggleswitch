@@ -1,5 +1,5 @@
 // ToggleSwitch.tsx
-import React from 'react';
+import React,{useEffect} from 'react';
 import './toggleSwitch.css';
 
 interface ToggleSwitchProps {
@@ -8,13 +8,20 @@ interface ToggleSwitchProps {
   onColor?:string;
   offColor?:string;
   disable?:boolean;
+  handleOnColor? :string;
+  handleOffColor?:string;
   ariaLabel?:string;
 }
 
-const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ checked, onToggle,onColor="#2196f3",offColor="#cccccc",disable=false,ariaLabel='' }) => {
+const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ checked, onToggle,onColor="#2196f3",offColor="#cccccc",handleOnColor="white",handleOffColor="white",disable=false,ariaLabel='' }) => {
   const handleChange = () => {
     onToggle(!checked);
   };
+
+  useEffect(() => {
+    const root = document.documentElement;
+    root.style.setProperty('--handlecolor', checked?handleOnColor:handleOffColor);
+  }, [handleOnColor,checked,handleOffColor]); 
 
   return (
     <label className='toggle-switch'>
