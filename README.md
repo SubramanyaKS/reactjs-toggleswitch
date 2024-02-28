@@ -44,7 +44,7 @@ const MyComponent: React.FC = () => {
 
 
 ```
-you can change offColor and onColor as of your choice
+you can change onColor,offColor,handleOnColor and handleOffColor as of your choice
 
 ```js
 
@@ -61,7 +61,7 @@ const MyComponent: React.FC = () => {
   return (
     <div>
       <h2>Toggle Switch Example</h2>
-      <ToggleSwitch checked={isChecked} onColor={"#0f0"} offColor={"#0ff"} onToggle={handleChange} />
+      <ToggleSwitch checked={isChecked} onColor={"#0f0"} offColor={"#0ff"} handleOnColor={"orange"} handleOffColor={"red"} onToggle={handleChange} />
     </div>
   );
 };
@@ -93,6 +93,8 @@ The `ToggleSwitch` component accepts the following props:
 | `offColor` | `string` | specifies background color change when switch is unchecked |
 | `disable` | `boolean` | specifies for disabling/enabling the toggle. |
 | `ariaLabel` | `string`| used to provide a label or description for an element. |
+|`handleOnColor` |`string` | specifies thumb color change when switch is checked |
+| `handleOffColor` | `string` |specifies thumb color change when switch is unchecked |
 
 ## Author
 [Subramanya KS](https://github.com/SubramanyaKS)
