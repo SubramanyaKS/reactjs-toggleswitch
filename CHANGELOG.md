@@ -47,3 +47,9 @@ All notable changes to the ToggleSwitch component will be documented in this fil
 ### Added
 - Support for disabling the toggle switch using the `ariaLabel` prop.
 - Updated README.md with documentation for the `ariaLabel` prop.
+
+## [1.2.0] - 2024-02-28
+
+### Added
+- Ability to customize switch thumb colors using `handleOnColor` and `handleOffColor` props.
+- Updated README.md with customization instructions.
