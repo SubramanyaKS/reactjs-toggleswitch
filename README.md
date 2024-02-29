@@ -28,7 +28,7 @@ import React, { useState } from 'react';
 import {ToggleSwitch} from 'reactjs-toggleswitch';
 
 const MyComponent: React.FC = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState<boolean>(false);
 
   const handleChange = (checked: boolean) => {
     setIsChecked(checked);
@@ -52,7 +52,7 @@ import React, { useState } from 'react';
 import {ToggleSwitch} from 'reactjs-toggleswitch';
 
 const MyComponent: React.FC = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState<boolean>(false);
 
   const handleChange = (checked: boolean) => {
     setIsChecked(checked);
@@ -78,7 +78,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 
 const MyComponent: React.FC = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState<boolean>(false);
 
   const handleChange = (checked: boolean) => {
     setIsChecked(checked);
