@@ -61,14 +61,14 @@ const MyComponent: React.FC = () => {
   return (
     <div>
       <h2>Toggle Switch Example</h2>
-      <ToggleSwitch checked={isChecked} onColor={"#0f0"} offColor={"#0ff"} handleOnColor={"orange"} handleOffColor={"red"} onToggle={handleChange} />
+      <ToggleSwitch checked={isChecked} onColor={"#0f0"} offColor={"#0ff"}  onToggle={handleChange} />
     </div>
   );
 };
 
 
 ```
-**Note**: Except v1.0.8 all other version need to import below file in App.jsx/tsx or main.jsx/tsx for styles to work.
+**Note**: Except v1.0.8,v1.2.11 all other version need to import below file in App.jsx/tsx or main.jsx/tsx for styles to work.
 
 ```js
 import 'reactjs-toggleswitch/dist/cjs/index.css';
@@ -93,8 +93,8 @@ The `ToggleSwitch` component accepts the following props:
 | `offColor` | `string` | specifies background color change when switch is unchecked |
 | `disable` | `boolean` | specifies for disabling/enabling the toggle. |
 | `ariaLabel` | `string`| used to provide a label or description for an element. |
-|`handleOnColor` |`string` | specifies thumb color change when switch is checked |
-| `handleOffColor` | `string` |specifies thumb color change when switch is unchecked |
+|`children` |`component` | specifies thumb icon use any component like font-awesome |
+
 
 ## Author
 [Subramanya KS](https://github.com/SubramanyaKS)
