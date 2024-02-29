@@ -1,12 +1,16 @@
+/* ToggleSwitch.css */
+
 .toggle-switch {
   position: relative;
   display: inline-block;
-  width: 64px;
+  width: 60px;
   height: 34px;
 }
 
 .toggle-switch input {
-  display: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .slider {
@@ -16,27 +20,43 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 45px;
+  background-color: #ccc; /* Default background color */
+  transition: .4s;
+  border-radius: 34px;
 }
 
 .slider:before {
   position: absolute;
-  content: '';
-  height: 27px;
-  width: 27px;
+  content: "";
+  height: 26px;
+  width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: var(--handlecolor);
-  transition: 0.4s;
+  background-color: white;
+  transition: .4s;
   border-radius: 50%;
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #2196f3; /* Background color when toggle is on */
 }
 
 input:checked + .slider:before {
-  transform: translateX(30px);
+  transform: translateX(26px);
+}
+
+/* Optional: Customize the appearance of the toggle switch label */
+.toggle-switch input:checked + .slider::before {
+  background-color: white; /* Color of the circle when toggle is on */
+}
+.icon {
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  transform: translateY(-50%); /* Center the icon vertically */
+  left: 8px; /* Adjust the horizontal position */
+  transition: 0.4s; /* Smooth transition */
+}
+input:checked + .slider .icon {
+  left: 35px; /* Adjust the left position as needed */
+  transition: left 0.4s;
 }
