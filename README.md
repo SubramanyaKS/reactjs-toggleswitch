@@ -9,12 +9,12 @@
 
 you can install this package using below npm command
 
-```shell
+```sh
 npm install reactjs-toggleswitch
 ```
 or
 
-```shell
+```sh
 yarn add reactjs-toggleswitch
 ```
 
@@ -44,7 +44,7 @@ const MyComponent: React.FC = () => {
 
 
 ```
-you can change onColor,offColor,handleOnColor and handleOffColor as of your choice
+you can change onColor and offColor as of your choice
 
 ```js
 
@@ -68,7 +68,37 @@ const MyComponent: React.FC = () => {
 
 
 ```
-**Note**: Except v1.0.8,v1.2.11 all other version need to import below file in App.jsx/tsx or main.jsx/tsx for styles to work.
+you can use icon for thumb as below.(used fontawesome for example. react-icons can also be used)
+
+```js
+
+import React, { useState } from 'react';
+import {ToggleSwitch} from 'reactjs-toggleswitch';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
+
+const MyComponent: React.FC = () => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleChange = (checked: boolean) => {
+    setIsChecked(checked);
+  };
+
+  return (
+    <div>
+      <h2>Toggle Switch Example</h2>
+      <ToggleSwitch checked={isChecked} onColor={"#0f0"} offColor={"#0ff"}  onToggle={handleChange} >
+      <FontAwesomeIcon icon={checked?faMoon:faSun} />
+      </ThoggleSwitch>
+    </div>
+  );
+};
+
+
+```
+
+
+**Note**: Except v1.0.8,v1.2.11 all other version need to import below file in App.jsx/tsx or main.jsx/tsx for default styles to work.
 
 ```js
 import 'reactjs-toggleswitch/dist/cjs/index.css';
