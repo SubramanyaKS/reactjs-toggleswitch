@@ -1,55 +1,41 @@
-import resolve from '@rollup/plugin-node-resolve'
-import commonjs from '@rollup/plugin-commonjs'
-import typescript from '@rollup/plugin-typescript'
-import {dts} from 'rollup-plugin-dts'
-// import css from "rollup-plugin-import-css";
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+import typescript from '@rollup/plugin-typescript';
+import { dts } from 'rollup-plugin-dts';
 import postcss from 'rollup-plugin-postcss';
-// import autoprefixer from 'autoprefixer';
-//NEW
-import terser from '@rollup/plugin-terser';
+import terser  from '@rollup/plugin-terser'; // Update import for terser
 
-const packageJson = require('./package.json')
+const packageJson = require('./package.json');
 
 export default [
   {
     input: 'src/index.ts',
-    output: [
-      
-      {
-        file: packageJson.main,
-        format: 'esm',
-        sourcemap: true,
-      },
-    ],
+    output: {
+      file: packageJson.main,
+      format: 'esm',
+      sourcemap: true,
+    },
     plugins: [
-      // NEW
       typescript({
-        tsconfig: './tsconfig.json' // Path to your tsconfig.json
+        tsconfig: './tsconfig.json',
+        // Set include option to include CSS files in TypeScript bundle
+        include: [/\.tsx?$/, /\.css$/],
       }),
-      // css(),
-      // peerDepsExternal(),
-
       resolve(),
       commonjs(),
       postcss({
-        plugins: [],
-        // sourceMap: true,
-        extract: true,
-        inject:false,
-        extensions:['.css'],
+        extract: false, // Disable CSS extraction
+        inject: true, // Inject CSS into the bundle
         minimize: true,
-        
-    }),
-    // css(),
-
-      // NEW
+        // Add any additional postcss plugins if needed
+      }),
       terser(),
     ],
   },
   {
     input: 'dist/cjs/types/src/index.d.ts',
-    output: [{ file: 'dist/index.d.ts', format: 'esm' }],
+    output: { file: 'dist/index.d.ts', format: 'esm' },
     plugins: [dts()],
     external: [/\.css$/],
   },
-]
+];
