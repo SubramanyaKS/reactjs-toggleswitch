@@ -53,3 +53,13 @@ All notable changes to the ToggleSwitch component will be documented in this fil
 ### Added
 - Ability to customize switch thumb colors using `handleOnColor` and `handleOffColor` props.
 - Updated README.md with customization instructions.
+
+## [1.2.11] - 2024-02-29
+
+### Removed
+- Ability to customize switch thumb colors using `handleOnColor` and `handleOffColor` props.
+- Updated README.md with customization instructions.
+
+### Added
+- Ability to give icon to thumb using `children`
+- Updated README.md with customization instructions.
