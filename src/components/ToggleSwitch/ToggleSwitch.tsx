@@ -10,9 +10,12 @@ interface ToggleSwitchProps {
   disable?:boolean;
   children?:ReactNode;
   ariaLabel?:string;
+  id?:string;
+  name?:string;
+  value?:string;
 }
 
-const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ checked, onToggle,onColor="#2196f3",offColor="#cccccc",disable=false,ariaLabel='',children }) => {
+const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ checked, onToggle,onColor="#2196f3",offColor="#cccccc",disable=false,ariaLabel='',children,name,value,id }) => {
   const handleChange = () => {
     onToggle(!checked);
   };
@@ -21,7 +24,7 @@ const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ checked, onToggle,onColor="
 
   return (
     <label className='toggle-switch'>
-      <input type='checkbox' disabled={disable} checked={checked} onChange={handleChange} aria-label={ariaLabel} />
+      <input type='checkbox' disabled={disable} checked={checked} onChange={handleChange} aria-label={ariaLabel} id={id} name={name} value={value} />
       <span style={{ backgroundColor: checked ? onColor : offColor }} className='slider'>
         <span  className="icon">{children}</span>
       </span>
