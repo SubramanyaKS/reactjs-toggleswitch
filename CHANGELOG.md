@@ -45,7 +45,7 @@ All notable changes to the ToggleSwitch component will be documented in this fil
 ## [1.1.2] - 2024-02-27
 
 ### Added
-- Support for disabling the toggle switch using the `ariaLabel` prop.
+- Support for aria-label the toggle switch using the `ariaLabel` prop.
 - Updated README.md with documentation for the `ariaLabel` prop.
 
 ## [1.2.0] - 2024-02-28
@@ -63,3 +63,9 @@ All notable changes to the ToggleSwitch component will be documented in this fil
 ### Added
 - Ability to give icon to thumb using `children`
 - Updated README.md with customization instructions.
+
+## [1.3.0] - 2024-03-09
+
+### Added
+- Support for id,name and value the toggle switch using the `id`,`value` and `name` prop.
+- Updated README.md with documentation for the `id`,`value` and `name` prop.
