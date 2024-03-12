@@ -124,7 +124,9 @@ The `ToggleSwitch` component accepts the following props:
 | `disable` | `boolean` | specifies for disabling/enabling the toggle. |
 | `ariaLabel` | `string`| used to provide a label or description for an element. |
 |`children` |`component` | specifies thumb icon use any component like font-awesome |
-
+| `id` | `string`| The value represents the id attribute of the encapsulated `input` element. |
+| `name` | `string`| The value represents the name attribute of the encapsulated `input` element.|
+| `value` | `string`| The value represents the value attribute of the encapsulated `input` element.|
 
 ## Author
 [Subramanya KS](https://github.com/SubramanyaKS)
