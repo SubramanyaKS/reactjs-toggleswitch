@@ -3,7 +3,7 @@
 <!-- 
 ![NPM Version](https://img.shields.io/npm/v/reactjs-toggleswitch) -->
 
-`reactjs-switch` is  a simple toggle switch component implemented using react js and TypeScript.It is a customizable toggle switch component for React applications. It provides a simple and intuitive way to implement toggle functionality with customizable styles and behavior.
+`reactjs-toggleswitch` is  a simple toggle switch component implemented using react js and TypeScript.It is a customizable toggle switch component for React applications. It provides a simple and intuitive way to implement toggle functionality with customizable styles and behavior.
 
 ## Installation
 
