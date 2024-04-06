@@ -13,20 +13,21 @@ interface ToggleSwitchProps {
   id?:string;
   name?:string;
   value?:string;
+  width?:string;
 }
 
-const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ checked, onToggle,onColor="#2196f3",offColor="#cccccc",disable=false,ariaLabel='',children,name,value,id }) => {
+const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ checked, onToggle,onColor="#2196f3",offColor="#cccccc",disable=false,ariaLabel='',children,name,value,id,width }) => {
   const handleChange = () => {
     onToggle(!checked);
   };
 
-   
+  const thumbPosition = checked ? 'calc(100% - 30px)' : '4px';
 
   return (
-    <label className='toggle-switch'>
+    <label className='toggle-switch' style={{width:width}}>
       <input type='checkbox' disabled={disable} checked={checked} onChange={handleChange} aria-label={ariaLabel} id={id} name={name} value={value} />
       <span style={{ backgroundColor: checked ? onColor : offColor }} className='slider'>
-        <span  className="icon">{children}</span>
+        <span className="thumb" style={{ left: thumbPosition }}>{children}</span>
       </span>
     </label>
   );
