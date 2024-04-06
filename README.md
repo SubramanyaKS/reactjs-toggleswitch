@@ -98,7 +98,7 @@ const MyComponent: React.FC = () => {
 ```
 
 
-**Note**: Except v1.0.8,v1.2.11 all other version need to import below file in App.jsx/tsx or main.jsx/tsx for default styles to work.
+**Note**: If styles are not working in your system after installation please import the below style.
 
 ```js
 import 'reactjs-toggleswitch/dist/cjs/index.css';
@@ -108,17 +108,11 @@ import 'reactjs-toggleswitch/dist/cjs/index.css';
 ### Options
 
 The `ToggleSwitch` component accepts the following props:
-<!-- 
-* `checked`: (boolean) Specifies whether the switch is checked or not.
-* `onToggle`: (function) Callback function called when the switch state changes. Receives a boolean parameter indicating the new state.
-* `onColor` : (string)  specifies background color change when switch is checked
-* `offColor` : (string)  specifies background color change when switch is unchecked
-* `disable` : (boolean) specifies for disabling/enabling the toggle. -->
 
 | Option | type | Description |
 | :---: | :---: | :---: |
 | `onToggle` | `function` | Callback function called when the switch state changes/toggle. Receives a boolean parameter indicating the new state. |
-| `checked` | `boolean` | Specifies whether the switch is checke    d or not. |
+| `checked` | `boolean` | Specifies whether the switch is checked or not. |
 | `onColor` | `string` | specifies background color change when switch is checked |
 | `offColor` | `string` | specifies background color change when switch is unchecked |
 | `disable` | `boolean` | specifies for disabling/enabling the toggle. |
@@ -127,6 +121,12 @@ The `ToggleSwitch` component accepts the following props:
 | `id` | `string`| The value represents the id attribute of the encapsulated `input` element. |
 | `name` | `string`| The value represents the name attribute of the encapsulated `input` element.|
 | `value` | `string`| The value represents the value attribute of the encapsulated `input` element.|
+|`width`|`string`|The value represents width of toggle switch|
+
+
+## Contribution
+
+We welcome contributions! If you'd like to contribute to reactjs-toggleswitch, please follow our [Contribution Guidelines](https://github.com/SubramanyaKS/reactjs-toggleswitch/blob/main/CONTRIBUTING.md).
 
 ## Author
 [Subramanya KS](https://github.com/SubramanyaKS)
