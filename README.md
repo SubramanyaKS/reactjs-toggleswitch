@@ -3,7 +3,7 @@
 <!-- 
 ![NPM Version](https://img.shields.io/npm/v/reactjs-toggleswitch) -->
 
-`reactjs-toggleswitch` is  a simple toggle switch component implemented using react js and TypeScript.It is a customizable toggle switch component for React applications. It provides a simple and intuitive way to implement toggle functionality with customizable styles and behavior.
+`reactjs-toggleswitch` is a customizable toggle switch component implemented using react js and TypeScript for React applications. It provides a simple and intuitive way to implement toggle functionality with customizable styles and behavior.
 
 ## Installation
 
@@ -44,58 +44,7 @@ const MyComponent: React.FC = () => {
 
 
 ```
-you can change onColor and offColor as of your choice
-
-```js
-
-import React, { useState } from 'react';
-import {ToggleSwitch} from 'reactjs-toggleswitch';
-
-const MyComponent: React.FC = () => {
-  const [isChecked, setIsChecked] = useState<boolean>(false);
-
-  const handleChange = (checked: boolean) => {
-    setIsChecked(checked);
-  };
-
-  return (
-    <div>
-      <h2>Toggle Switch Example</h2>
-      <ToggleSwitch checked={isChecked} onColor={"#0f0"} offColor={"#0ff"}  onToggle={handleChange} />
-    </div>
-  );
-};
-
-
-```
-you can use icon for thumb as below.(used fontawesome for example. react-icons can also be used)
-
-```js
-
-import React, { useState } from 'react';
-import {ToggleSwitch} from 'reactjs-toggleswitch';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
-
-const MyComponent: React.FC = () => {
-  const [isChecked, setIsChecked] = useState<boolean>(false);
-
-  const handleChange = (checked: boolean) => {
-    setIsChecked(checked);
-  };
-
-  return (
-    <div>
-      <h2>Toggle Switch Example</h2>
-      <ToggleSwitch checked={isChecked} onColor={"#0f0"} offColor={"#0ff"}  onToggle={handleChange} >
-      <FontAwesomeIcon icon={checked?faMoon:faSun} />
-      </ThoggleSwitch>
-    </div>
-  );
-};
-
-
-```
+For more details regarding usage please refer [EXAMPLES.md](https://github.com/SubramanyaKS/reactjs-toggleswitch/blob/main/EXAMPLES.md)
 
 
 **Note**: If styles are not working in your system after installation please import the below style.
@@ -122,6 +71,8 @@ The `ToggleSwitch` component accepts the following props:
 | `name` | `string`| The value represents the name attribute of the encapsulated `input` element.|
 | `value` | `string`| The value represents the value attribute of the encapsulated `input` element.|
 |`width`|`string`|The value represents width of toggle switch|
+|`thumbOnColor`|`string`|specifies background color of thumb change when switch is checked|
+|`thumbOffColor`|`string`|specifies background color of thumb change when switch is unchecked|
 
 
 ## Contribution
@@ -133,4 +84,4 @@ We welcome contributions! If you'd like to contribute to reactjs-toggleswitch, p
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
