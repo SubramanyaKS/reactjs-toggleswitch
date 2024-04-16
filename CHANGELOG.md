@@ -67,5 +67,17 @@ All notable changes to the ToggleSwitch component will be documented in this fil
 ## [1.3.0] - 2024-03-09
 
 ### Added
-- Support for id,name and value the toggle switch using the `id`,`value` and `name` prop.
+- Support for id,name and value of the toggle switch using the `id`,`value` and `name` prop.
 - Updated README.md with documentation for the `id`,`value` and `name` prop.
+
+## [1.3.1] - 2024-04-06
+
+### Added
+- Ability to customize switch thumb width using `width` prop.
+- Updated README.md with documentation for the `width` prop
+
+## [1.4.0] - 2024-04-14
+
+### Added
+- Ability to change the thumb color on checked using `thumbOnColor` and `thumbOffColor` props
+- Updated README.md with documentation for the `thumbOnColor` and `thumbOffColor` props.
