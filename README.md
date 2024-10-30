@@ -5,6 +5,10 @@
 
 `reactjs-toggleswitch` is a customizable toggle switch component implemented using react js and TypeScript for React applications. It provides a simple and intuitive way to implement toggle functionality with customizable styles and behavior.
 
+![image](https://github.com/user-attachments/assets/4c2f0913-fcc4-4e14-b8ad-2e1a2dd76240)
+![image](https://github.com/user-attachments/assets/6b16f1b8-21b2-4fd0-b71c-85b24079251b)
+
+
 ## Installation
 
 you can install this package using below npm command
