@@ -79,6 +79,8 @@ The `ToggleSwitch` component accepts the following props:
 |`thumbOffColor`|`string`|specifies background color of thumb change when switch is unchecked|
 
 
+The Live usage of Reactjs-toggleswitch can be seen [here](https://subramanyaks.github.io/Weather-app/)
+
 ## Contribution
 
 We welcome contributions! If you'd like to contribute to reactjs-toggleswitch, please follow our [Contribution Guidelines](https://github.com/SubramanyaKS/reactjs-toggleswitch/blob/main/CONTRIBUTING.md).
